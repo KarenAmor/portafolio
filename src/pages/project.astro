@@ -1,0 +1,95 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title="Projects" description="Discover my recent projects and professional experience" />
+    <style>
+      main {
+        width: calc(100% - 2em);
+        max-width: 720px;
+        margin: auto;
+        padding: 1em;
+        color: rgb(var(--gray-dark));
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      h2 {
+        margin-top: 1.5em;
+        color: rgb(var(--primary));
+      }
+      p, li {
+        line-height: 1.6;
+        margin-bottom: 0.8em;
+      }
+      a {
+        color: rgb(var(--primary));
+        text-decoration: underline;
+      }
+      .project {
+        margin-bottom: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>My Projects</h1>
+      
+      <div class="project">
+        <h2>Movie Management System</h2>
+        <p>
+          Este proyecto es una API para la gestión de películas. Permite a los usuarios registrarse, autenticarse y seleccionar películas desde una base de datos.
+        </p>
+        <h3>Tecnologías utilizadas:</h3>
+        <ul>
+          <li><strong>Backend:</strong> Python (FastAPI)</li>
+          <li><strong>Base de datos:</strong> SQLite</li>
+          <li><strong>Despliegue:</strong> Render</li>
+        </ul>
+        <p>
+          Puedes explorar la API a través de la documentación interactiva en Swagger: 
+          <a href="https://movies-1-16a7.onrender.com/docs" target="_blank">Swagger del Proyecto de Películas</a>.
+        </p>
+      </div>
+
+      <div class="project">
+        <h2>Task Management API</h2>
+        <p>
+          Esta API permite gestionar tareas, incluyendo creación, lectura, actualización y eliminación, utilizando DTOs para garantizar validación de datos.
+        </p>
+        <h3>Tecnologías utilizadas:</h3>
+        <ul>
+          <li><strong>Backend:</strong> TypeScript (NestJS)</li>
+          <li><strong>Base de datos:</strong> SQLite</li>
+          <li><strong>Despliegue:</strong> Render</li>
+        </ul>
+        <p>
+          Puedes explorar la API a través de la documentación interactiva en Swagger: 
+          <a href="https://task-manager-6tex.onrender.com/api" target="_blank">Swagger del Proyecto de Tareas</a>.
+        </p>
+      </div>
+
+      <div class="project">
+        <h2>Experiencia Profesional</h2>
+        <p>
+          Durante mi experiencia en una empresa financiera, trabajé desarrollando soluciones críticas utilizando las siguientes tecnologías:
+        </p>
+        <ul>
+          <li><strong>Azure:</strong> Administración de recursos en la nube, configuración de secretos y gestión de pipelines</li>
+          <li><strong>Bases de datos:</strong> SQL Server</li>
+          <li><strong>Autenticación:</strong> Implementación de autenticación basada en tokens</li>
+        </ul>
+        <p>
+          Debido a la naturaleza confidencial de los datos financieros, no puedo proporcionar acceso a estos sistemas ni a su documentación.
+        </p>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
