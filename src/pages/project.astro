@@ -40,56 +40,76 @@ import Footer from '../components/Footer.astro';
     <Header />
     <main>
       <h1>My Projects</h1>
-      
-      <div class="project">
-        <h2>Movie Management System</h2>
+      <section>
+        <h1>Movie Management System</h1>
         <p>
-          Este proyecto es una API para la gestión de películas. Permite a los usuarios registrarse, autenticarse y seleccionar películas desde una base de datos.
-        </p>
-        <h3>Tecnologías utilizadas:</h3>
-        <ul>
-          <li><strong>Backend:</strong> Python (FastAPI)</li>
-          <li><strong>Base de datos:</strong> SQLite</li>
-          <li><strong>Despliegue:</strong> Render</li>
-        </ul>
-        <p>
-          Puedes explorar la API a través de la documentación interactiva en Swagger: 
-          <a href="https://movies-1-16a7.onrender.com/docs" target="_blank">Swagger del Proyecto de Películas</a>.
-        </p>
-      </div>
-
-      <div class="project">
-        <h2>Task Management API</h2>
-        <p>
-          Esta API permite gestionar tareas, incluyendo creación, lectura, actualización y eliminación, utilizando DTOs para garantizar validación de datos.
-        </p>
-        <h3>Tecnologías utilizadas:</h3>
-        <ul>
-          <li><strong>Backend:</strong> TypeScript (NestJS)</li>
-          <li><strong>Base de datos:</strong> SQLite</li>
-          <li><strong>Despliegue:</strong> Render</li>
-        </ul>
-        <p>
-          Puedes explorar la API a través de la documentación interactiva en Swagger: 
-          <a href="https://task-manager-6tex.onrender.com/api" target="_blank">Swagger del Proyecto de Tareas</a>.
-        </p>
-      </div>
-
-      <div class="project">
-        <h2>Experiencia Profesional</h2>
-        <p>
-          Durante mi experiencia en una empresa financiera, trabajé desarrollando soluciones críticas utilizando las siguientes tecnologías:
+          This project is an API for managing movies. It allows users to register, authenticate, and select movies from a database. It was developed quickly, leveraging technologies that simplify both development and deployment.
         </p>
         <ul>
-          <li><strong>Azure:</strong> Administración de recursos en la nube, configuración de secretos y gestión de pipelines</li>
-          <li><strong>Bases de datos:</strong> SQL Server</li>
-          <li><strong>Autenticación:</strong> Implementación de autenticación basada en tokens</li>
+          <li><strong>Backend:</strong> Python (FastAPI). FastAPI was chosen for its focus on performance, automatic typing, and built-in Swagger documentation generation.</li>
+          <li><strong>Features:</strong> User registration, authentication, and movie selection with a focus on security and ease of use.</li>
+        </ul>
+        <h3>Key Achievements</h3>
+        <ul>
+          <li>Complete development in less than a week, thanks to the efficiency of FastAPI and SQLite.</li>
+          <li>Implementation of a secure authentication system for registered users.</li>
+          <li>Automatically generated documentation with Swagger, enhancing testing and usability.</li>
+          <li>Successful deployment on Render with continuous integration.</li>
         </ul>
         <p>
-          Debido a la naturaleza confidencial de los datos financieros, no puedo proporcionar acceso a estos sistemas ni a su documentación.
+          You can explore the API through the interactive Swagger documentation: 
+          <a href="https://movies-1-16a7.onrender.com/docs" target="_blank">Movie Project Swagger</a>.
         </p>
-      </div>
-    </main>
+      </section>
+    
+      <section>
+        <h1>Task Management API</h1>
+        <p>
+          This API enables task management with CRUD operations (Create, Read, Update, and Delete), ensuring data validation through the use of DTOs.
+        </p>
+        <ul>
+          <li><strong>Backend:</strong> TypeScript (NestJS). NestJS was chosen for its modular architecture, support for advanced development patterns, and ease of implementing robust validations.</li>
+          <li><strong>Features:</strong> Data validation with DTOs, modularity for extending functionalities, and a scalable design.</li>
+        </ul>
+        <h3>Key Achievements</h3>
+        <ul>
+          <li>Designed a modular architecture using DTOs to ensure data validation.</li>
+          <li>Optimized data flow, ensuring efficiency in CRUD operations.</li>
+          <li>Successfully deployed on Render, ensuring high availability of the API.</li>
+          <li>Integrated advanced development patterns to facilitate future scalability.</li>
+        </ul>
+        <p>
+          You can explore the API through the interactive Swagger documentation: 
+          <a href="https://task-manager-6tex.onrender.com/api" target="_blank">Task Project Swagger</a>.
+        </p>
+      </section>
+    
+      <section>
+        <h2>Common Technologies Used</h2>
+        <ul>
+          <li><strong>Database:</strong> SQLite. SQLite was chosen for both projects due to its simplicity, speed, and full support for SQL transactions. It is ideal for development environments, allowing a focus on API functionality without additional complexity.</li>
+          <li><strong>Deployment:</strong> Render. Both projects were deployed on Render for its quick integration with modern applications and support for continuous deployment (CD). Render helped reduce configuration times, leaving more time to iterate on core project functionalities.</li>
+        </ul>
+      </section>
+    
+      <section>
+        <h1>Professional Experience</h1>
+        <p>
+          During my experience at a financial company, I was responsible for the development and implementation of critical solutions that required high standards of security and efficiency. My main activities included:
+        </p>
+        <ul>
+          <li><strong>Azure:</strong> Advanced management of cloud resources, including configuration and use of Key Vault to securely manage secrets and credentials. I also configured and optimized CI/CD pipelines to automate deployment and testing.</li>
+          <li><strong>Databases:</strong> Optimization and maintenance of SQL Server databases, ensuring efficient performance when handling large volumes of financial data.</li>
+          <li><strong>Authentication:</strong> Implementation of token-based authentication systems, ensuring security and data integrity across all access and communication processes.</li>
+          <li><strong>Version Control:</strong> Advanced Git repository management, working with multiple branches, implementing collaborative workflows (such as Git Flow), and resolving conflicts in multidisciplinary teams.</li>
+          <li><strong>Backend Development:</strong> Used Express.js to build robust and scalable APIs and conducted unit testing with Jest to ensure code quality.</li>
+          <li><strong>Agile Methodology:</strong> Worked under the Scrum framework, collaborating with teams to plan sprints, conduct retrospectives, and deliver high-quality outputs within tight deadlines.</li>
+        </ul>
+        <p>
+          Due to the confidential nature of financial data, I cannot provide direct access to these systems or their documentation. However, this experience allowed me to develop key skills in cloud resource management, database optimization, secure data handling, and collaborative development in demanding environments.
+        </p>
+      </section>
+    </main>    
     <Footer />
   </body>
 </html>
